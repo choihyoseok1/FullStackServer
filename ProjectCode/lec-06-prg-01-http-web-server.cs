@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 class MyHTTPHandler
 {   
-    void print_http_request_detail()
+    void print_http_request_detail(HttpListenerRequest request)
     {
-        client_address=context.Request.RemoteEndPoint.Address.ToString();
-        client_port=context.Request.RemoteEndPoint.Port;
-        request_command=context.Request.HttpMethod;
-        request_line=context.Request.RawUrl;
-        request_path=context.Request.Url.AbsolutePath;
-        request_version=context.Request.ProtocolVersion.ToString();
+        client_address=request.RemoteEndPoint.Address.ToString();
+        client_port=request.RemoteEndPoint.Port;
+        request_command=request.HttpMethod;
+        request_line=request.RawUrl;
+        request_path=request.Url.AbsolutePath;
+        request_version=request.ProtocolVersion.ToString();
         
         Console.WriteLine("::Client address   : {0}", client_address);
         Console.WriteLine("::Client port      : {0}", client_port);
@@ -23,25 +23,52 @@ class MyHTTPHandler
         Console.WriteLine("::Request version  : {0}", request_version);
     }
 
-    void send_http_response_header()
+    void send_http_response_header(HttpListenerRequest response)
     {
         response.StatusCode = 200;
         response.ContentType = "text/html";
-        response.ContentLength64 = 0;
-        response.OutputStream.Close();
     }
 
-    void do_GET()
+    void do_GET(HttpListenerRequest request, HttpListenerResponse response)
     {
         Console.WriteLine(" do_GET() activated.");
-        print_http_request_detail();
-        send_http_response_header();
+        
+        print_http_request_detail(request);
+        send_http_response_header(response);
+       
+        string path = request.Url.Query;
+        if (!string.IsNullOrEmpty(path)){
+            path = path.Substring(1);
+            int[] pamameters = parameter_retrieval(path);
+            int result = simple_calc(pamameters[0], pamameters[1]);
 
+            string html = "<html>";
+            string get_response = string.Format("GET request for calculation => {0} x {1} = {2}", parameters[0], parameters[1], result);
+            html += get_response;
+            html += "</html>";
 
+            byte[] buffer = Encoding.UTF8.GetBytes(html);
+            response.ContentLength64 = buffer.Length;
+            response.OutputStream.Write(buffer, 0, buffer.Length);
+            response.OutputStream.Close();
+            Console.WriteLine(" GET request for calculation => {0} x {1} = {2}.", parameter[0], parameter[1], result);
+        }
+        else
+        {
+            string html = "<html>";
+            string get_response = string.Format("<p>HTTP Request GET for Path: {0}</p>", self.path);
+            html += get_response;
+            html += "</html>";
 
+            byte[] buffer = Encoding.UTF8.GetBytes(html);
+            response.ContentLength64 = buffer.Length;
+            response.OutputStream.Write(buffer, 0, buffer.Length);
+            response.OutputStream.Close();
+            Console.WriteLine("GET request for directory => {0}.", path);
+        }
     }
 
-    void do_POST()
+    void do_POST(HttpListenerRequest request, HttpListenerResponse response)
     {
         Console.WriteLine(" do_Post() activated.");
         print_http_request_detail();
@@ -58,12 +85,12 @@ class MyHTTPHandler
         return para1*para2;
     }
 
-    void parameter_retrieval(self, msg)
+    void parameter_retrieval(msg)
     {
-        result = [];
-        fields = msg.split('&');
-        result.append(int.Parse(fields[0].split('=')[1]));
-        result.append(int.Parse(fields[1].split('=')[1]));
+        int[] result = new int[2];
+        string[] fields = msg.split('&');
+        result[0]= int.Parse(fields[0].split('=')[1]);
+        result[1]= int.Parse(fields[1].split('=')[1]);
         return result;
     }
 }
@@ -88,11 +115,11 @@ class MainProgram
             MyHTTPHandler Handler = new MyHTTPHandler();
             if (request.HttpMethod == "GET")
             {
-                Handler.do_GET();
+                Handler.do_GET(request, response);
             }
             else if (request.HttpMethod == "POST")
             {
-                Handler.do_POST();
+                Handler.do_POST(request, response);
             }                           
             Handler.log_message();
             response.Close();        
