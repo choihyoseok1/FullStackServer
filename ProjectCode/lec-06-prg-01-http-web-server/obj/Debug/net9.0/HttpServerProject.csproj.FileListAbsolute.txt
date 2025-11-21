@@ -1,0 +1,15 @@
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\obj\Debug\net9.0\HttpServerProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\obj\Debug\net9.0\HttpServerProject.AssemblyInfoInputs.cache
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\obj\Debug\net9.0\HttpServerProject.AssemblyInfo.cs
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\obj\Debug\net9.0\HttpServerProject.csproj.CoreCompileInputs.cache
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\obj\Debug\net9.0\HttpServerProject.sourcelink.json
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\bin\Debug\net9.0\HttpServerProject.exe
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\bin\Debug\net9.0\HttpServerProject.deps.json
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\bin\Debug\net9.0\HttpServerProject.runtimeconfig.json
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\bin\Debug\net9.0\HttpServerProject.dll
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\bin\Debug\net9.0\HttpServerProject.pdb
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\obj\Debug\net9.0\HttpServerProject.dll
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\obj\Debug\net9.0\refint\HttpServerProject.dll
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\obj\Debug\net9.0\HttpServerProject.pdb
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\obj\Debug\net9.0\HttpServerProject.genruntimeconfig.cache
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\HttpServerProject\obj\Debug\net9.0\ref\HttpServerProject.dll

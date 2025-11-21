@@ -1,20 +1,20 @@
-using System;
+﻿using System;
 using System.Net;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Threading.Tasks;
+using System.Text;
+using System.IO;
+using System.Collections.Generic;
 
 class MyHTTPHandler
 {   
     void print_http_request_detail(HttpListenerRequest request)
     {
-        client_address=request.RemoteEndPoint.Address.ToString();
-        client_port=request.RemoteEndPoint.Port;
-        request_command=request.HttpMethod;
-        request_line=request.RawUrl;
-        request_path=request.Url.AbsolutePath;
-        request_version=request.ProtocolVersion.ToString();
-        
+        string client_address=request.RemoteEndPoint.Address.ToString();
+        int client_port=request.RemoteEndPoint.Port;
+        string request_command=request.HttpMethod;
+        string request_line=request.RawUrl;
+        string request_path=request.Url.AbsolutePath;
+        string request_version=request.ProtocolVersion.ToString();
+    
         Console.WriteLine("::Client address   : {0}", client_address);
         Console.WriteLine("::Client port      : {0}", client_port);
         Console.WriteLine("::Request command  : {0}", request_command);
@@ -23,13 +23,13 @@ class MyHTTPHandler
         Console.WriteLine("::Request version  : {0}", request_version);
     }
 
-    void send_http_response_header(HttpListenerRequest response)
+    void send_http_response_header(HttpListenerResponse response)
     {
         response.StatusCode = 200;
         response.ContentType = "text/html";
     }
 
-    void do_GET(HttpListenerRequest request, HttpListenerResponse response)
+    public void do_GET(HttpListenerRequest request, HttpListenerResponse response)
     {
         Console.WriteLine(" do_GET() activated.");
         
@@ -39,8 +39,8 @@ class MyHTTPHandler
         string path = request.Url.Query;
         if (!string.IsNullOrEmpty(path)){
             path = path.Substring(1);
-            int[] pamameters = parameter_retrieval(path);
-            int result = simple_calc(pamameters[0], pamameters[1]);
+            int[] parameters = parameter_retrieval(path);
+            int result = simple_calc(parameters[0], parameters[1]);
 
             string html = "<html>";
             string get_response = string.Format("GET request for calculation => {0} x {1} = {2}", parameters[0], parameters[1], result);
@@ -51,12 +51,12 @@ class MyHTTPHandler
             response.ContentLength64 = buffer.Length;
             response.OutputStream.Write(buffer, 0, buffer.Length);
             response.OutputStream.Close();
-            Console.WriteLine(" GET request for calculation => {0} x {1} = {2}.", parameter[0], parameter[1], result);
+            Console.WriteLine(" GET request for calculation => {0} x {1} = {2}.", parameters[0], parameters[1], result);
         }
         else
         {
             string html = "<html>";
-            string get_response = string.Format("<p>HTTP Request GET for Path: {0}</p>", self.path);
+            string get_response = string.Format("<p>HTTP Request GET for Path: {0}</p>", request.Url.AbsolutePath);
             html += get_response;
             html += "</html>";
 
@@ -64,20 +64,29 @@ class MyHTTPHandler
             response.ContentLength64 = buffer.Length;
             response.OutputStream.Write(buffer, 0, buffer.Length);
             response.OutputStream.Close();
-            Console.WriteLine("GET request for directory => {0}.", path);
+            Console.WriteLine("## GET request for directory => {0}.", request.Url.AbsolutePath);
         }
     }
 
-    void do_POST(HttpListenerRequest request, HttpListenerResponse response)
+    public void do_POST(HttpListenerRequest request, HttpListenerResponse response)
     {
         Console.WriteLine(" do_Post() activated.");
-        print_http_request_detail();
-        send_http_response_header();
-    }
+        print_http_request_detail(request);
+        send_http_response_header(response);
 
-    void log_message(self)
-    {
-        
+        long contentLength = request.ContentLength64;
+        byte[] readbuffer = new byte[contentLength];
+        request.InputStream.Read(readbuffer, 0, readbuffer.Length);
+        string post_data = Encoding.UTF8.GetString(readbuffer);
+        int[] parameter = parameter_retrieval(post_data);
+        int result = simple_calc(parameter[0], parameter[1]);
+
+        string post_response = string.Format("POST request for calculation => {0} x {1} = {2}" ,parameter[0], parameter[1], result);
+        byte[] buffer = Encoding.UTF8.GetBytes(post_response);
+        response.ContentLength64 = buffer.Length;
+        response.OutputStream.Write(buffer, 0, buffer.Length);
+        response.OutputStream.Close();
+        Console.WriteLine("POST request for calculation => {0} x {1} = {2}.", parameter[0], parameter[1], result);
     }
 
     int simple_calc(int para1, int para2)
@@ -85,12 +94,12 @@ class MyHTTPHandler
         return para1*para2;
     }
 
-    void parameter_retrieval(msg)
+    int[] parameter_retrieval(string msg)
     {
         int[] result = new int[2];
-        string[] fields = msg.split('&');
-        result[0]= int.Parse(fields[0].split('=')[1]);
-        result[1]= int.Parse(fields[1].split('=')[1]);
+        string[] fields = msg.Split('&');
+        result[0]= int.Parse(fields[0].Split('=')[1]);
+        result[1]= int.Parse(fields[1].Split('=')[1]);
         return result;
     }
 }
@@ -99,20 +108,20 @@ class MainProgram
 {
     static void Main(string[] args)
     {
-        server_name = "localhost";
-        server_port = 8080;
+        string server_name = "localhost";
+        int server_port = 8080;
 
         HttpListener listener = new HttpListener();
-        listener.Prefixes.Add("http://{0}:{1}", server_name, server_port);
+        listener.Prefixes.Add(string.Format("http://{0}:{1}/", server_name, server_port));
         listener.Start();
-        Console.WriteLine("## HTTP server started at http://{0}:{1}", server_name, server_port);
-
+        Console.WriteLine("HTTP server started at http://{0}:{1}/", server_name, server_port);
+        MyHTTPHandler Handler = new MyHTTPHandler();
         while (true)
         {
             var context = listener.GetContext();
             var request = context.Request;
             var response = context.Response;
-            MyHTTPHandler Handler = new MyHTTPHandler();
+            
             if (request.HttpMethod == "GET")
             {
                 Handler.do_GET(request, response);
@@ -121,8 +130,6 @@ class MainProgram
             {
                 Handler.do_POST(request, response);
             }                           
-            Handler.log_message();
-            response.Close();        
         }
     }
 
