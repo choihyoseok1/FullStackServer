@@ -1,0 +1,15 @@
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\obj\Debug\net9.0\lec-06-prg-02-http-web-client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\obj\Debug\net9.0\lec-06-prg-02-http-web-client.AssemblyInfoInputs.cache
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\obj\Debug\net9.0\lec-06-prg-02-http-web-client.AssemblyInfo.cs
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\obj\Debug\net9.0\lec-06-prg-02-http-web-client.csproj.CoreCompileInputs.cache
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\obj\Debug\net9.0\lec-06-prg-02-http-web-client.sourcelink.json
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\bin\Debug\net9.0\lec-06-prg-02-http-web-client.exe
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\bin\Debug\net9.0\lec-06-prg-02-http-web-client.deps.json
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\bin\Debug\net9.0\lec-06-prg-02-http-web-client.runtimeconfig.json
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\bin\Debug\net9.0\lec-06-prg-02-http-web-client.dll
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\bin\Debug\net9.0\lec-06-prg-02-http-web-client.pdb
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\obj\Debug\net9.0\lec-06-prg-02-http-web-client.dll
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\obj\Debug\net9.0\refint\lec-06-prg-02-http-web-client.dll
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\obj\Debug\net9.0\lec-06-prg-02-http-web-client.pdb
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\obj\Debug\net9.0\lec-06-prg-02-http-web-client.genruntimeconfig.cache
+C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-02-http-web-client\obj\Debug\net9.0\ref\lec-06-prg-02-http-web-client.dll

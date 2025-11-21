@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("HttpServerProject")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("lec-06-prg-02-http-web-client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79a4f1a3691ffbefbdc10b703b04fef8eb1443f7")]
-[assembly: System.Reflection.AssemblyProductAttribute("HttpServerProject")]
-[assembly: System.Reflection.AssemblyTitleAttribute("HttpServerProject")]
+[assembly: System.Reflection.AssemblyProductAttribute("lec-06-prg-02-http-web-client")]
+[assembly: System.Reflection.AssemblyTitleAttribute("lec-06-prg-02-http-web-client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment 클래스에서 생성되었습니다.
