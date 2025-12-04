@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ForStudy\\Documents\\GitHub\\FullStackServer\\ProjectCode\\lec-06-prg-05-json-example\\lec-06-prg-05-json-example.csproj": {}
+    "C:\\Users\\ForStudy\\Desktop\\새 폴더 (3)\\ProjectCode\\lec-06-prg-05-json-example\\lec-06-prg-05-json-example.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ForStudy\\Documents\\GitHub\\FullStackServer\\ProjectCode\\lec-06-prg-05-json-example\\lec-06-prg-05-json-example.csproj": {
+    "C:\\Users\\ForStudy\\Desktop\\새 폴더 (3)\\ProjectCode\\lec-06-prg-05-json-example\\lec-06-prg-05-json-example.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ForStudy\\Documents\\GitHub\\FullStackServer\\ProjectCode\\lec-06-prg-05-json-example\\lec-06-prg-05-json-example.csproj",
+        "projectUniqueName": "C:\\Users\\ForStudy\\Desktop\\새 폴더 (3)\\ProjectCode\\lec-06-prg-05-json-example\\lec-06-prg-05-json-example.csproj",
         "projectName": "lec-06-prg-05-json-example",
-        "projectPath": "C:\\Users\\ForStudy\\Documents\\GitHub\\FullStackServer\\ProjectCode\\lec-06-prg-05-json-example\\lec-06-prg-05-json-example.csproj",
+        "projectPath": "C:\\Users\\ForStudy\\Desktop\\새 폴더 (3)\\ProjectCode\\lec-06-prg-05-json-example\\lec-06-prg-05-json-example.csproj",
         "packagesPath": "C:\\Users\\ForStudy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ForStudy\\Documents\\GitHub\\FullStackServer\\ProjectCode\\lec-06-prg-05-json-example\\obj\\",
+        "outputPath": "C:\\Users\\ForStudy\\Desktop\\새 폴더 (3)\\ProjectCode\\lec-06-prg-05-json-example\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

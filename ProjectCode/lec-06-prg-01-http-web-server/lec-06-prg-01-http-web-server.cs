@@ -116,11 +116,17 @@ class MainProgram
         listener.Start();
         Console.WriteLine("HTTP server started at http://{0}:{1}/", server_name, server_port);
         MyHTTPHandler Handler = new MyHTTPHandler();
+        var context = listener.GetContextAsync();
         while (true)
         {
-            var context = listener.GetContext();
-            var request = context.Request;
-            var response = context.Response;
+            if (Console.KeyAvailable)
+            {
+                break;
+            }
+            if(context.IsCompleted) {
+            var result = context.Result;
+            var request = result.Request;
+            var response = result.Response;
             
             if (request.HttpMethod == "GET")
             {
@@ -129,8 +135,12 @@ class MainProgram
             else if (request.HttpMethod == "POST")
             {
                 Handler.do_POST(request, response);
-            }                           
+            }          
+                context = listener.GetContextAsync();
+            }                 
         }
-    }
 
+        listener.Stop();
+        Console.WriteLine("Server stopped.");
+    }
 }

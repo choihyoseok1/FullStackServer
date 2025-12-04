@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lec-06-prg-05-json-example")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f84b15bd1aa50853064d43cc60c7c72cfd503edb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("lec-06-prg-05-json-example")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lec-06-prg-05-json-example")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

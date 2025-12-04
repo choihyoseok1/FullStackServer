@@ -24,3 +24,28 @@ C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-07-res
 C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\lec-06-prg-07-rest-server-v3.pdb
 C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\lec-06-prg-07-rest-server-v3.genruntimeconfig.cache
 C:\Users\ForStudy\Documents\GitHub\FullStackServer\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\ref\lec-06-prg-07-rest-server-v3.dll
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\bin\Debug\net9.0\lec-06-prg-07-rest-server-v3.staticwebassets.endpoints.json
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\bin\Debug\net9.0\lec-06-prg-07-rest-server-v3.exe
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\bin\Debug\net9.0\lec-06-prg-07-rest-server-v3.deps.json
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\bin\Debug\net9.0\lec-06-prg-07-rest-server-v3.runtimeconfig.json
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\bin\Debug\net9.0\lec-06-prg-07-rest-server-v3.dll
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\bin\Debug\net9.0\lec-06-prg-07-rest-server-v3.pdb
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\lec-06-prg-07-rest-server-v3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\lec-06-prg-07-rest-server-v3.AssemblyInfoInputs.cache
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\lec-06-prg-07-rest-server-v3.AssemblyInfo.cs
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\lec-06-prg-07-rest-server-v3.csproj.CoreCompileInputs.cache
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\lec-06-prg-07-rest-server-v3.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\scopedcss\bundle\lec-06-prg-07-rest-server-v3.styles.css
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\lec-06-prg-07-rest-server-v3.dll
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\refint\lec-06-prg-07-rest-server-v3.dll
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\lec-06-prg-07-rest-server-v3.pdb
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\lec-06-prg-07-rest-server-v3.genruntimeconfig.cache
+C:\Users\ForStudy\Desktop\새 폴더 (3)\ProjectCode\lec-06-prg-07-rest-server-v3\obj\Debug\net9.0\ref\lec-06-prg-07-rest-server-v3.dll

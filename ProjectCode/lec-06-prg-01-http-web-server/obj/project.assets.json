@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ForStudy\\Documents\\GitHub\\FullStackServer\\ProjectCode\\lec-06-prg-01-http-web-server\\HttpServerProject.csproj",
+      "projectUniqueName": "C:\\Users\\ForStudy\\Desktop\\새 폴더 (3)\\ProjectCode\\lec-06-prg-01-http-web-server\\HttpServerProject.csproj",
       "projectName": "HttpServerProject",
-      "projectPath": "C:\\Users\\ForStudy\\Documents\\GitHub\\FullStackServer\\ProjectCode\\lec-06-prg-01-http-web-server\\HttpServerProject.csproj",
+      "projectPath": "C:\\Users\\ForStudy\\Desktop\\새 폴더 (3)\\ProjectCode\\lec-06-prg-01-http-web-server\\HttpServerProject.csproj",
       "packagesPath": "C:\\Users\\ForStudy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ForStudy\\Documents\\GitHub\\FullStackServer\\ProjectCode\\lec-06-prg-01-http-web-server\\obj\\",
+      "outputPath": "C:\\Users\\ForStudy\\Desktop\\새 폴더 (3)\\ProjectCode\\lec-06-prg-01-http-web-server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
